@@ -11,7 +11,8 @@ def vector_storage(chunks):
         metadatas.append(
             {
                 "chunk_id" : chunk["chunk_id"],
-                "page" : chunk["page"]
+                "page" : chunk["page"],
+                "source": chunk["source"]
             }
         )
     vector_store = FAISS.from_texts(

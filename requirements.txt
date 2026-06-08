@@ -5,3 +5,5 @@ langchain-huggingface
 faiss-cpu
 langchain-openai
 dotenv
+streamlit
+os

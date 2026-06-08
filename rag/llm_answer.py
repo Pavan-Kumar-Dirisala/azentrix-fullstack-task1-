@@ -2,7 +2,7 @@ from rag.llm_initializer import openai
 from rag.prompts import SYSTEM_PROMPT
 
 def answer(query , retrieved_chunks):
-    context = f"/n/n".join(
+    context = "/n/n".join(
         chunk["content"] for chunk in retrieved_chunks)
     messages = [
         (
@@ -21,7 +21,7 @@ def answer(query , retrieved_chunks):
     for chunk in retrieved_chunks:
 
         citations.append(
-            f"Page {chunk['page']} (Chunk {chunk['chunk_id']})"
+            f"Page {chunk['source']} {chunk['page']} (Chunk {chunk['chunk_id']})"
         )
 
     citations = "\n".join(

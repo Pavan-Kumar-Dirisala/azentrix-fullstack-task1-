@@ -11,6 +11,7 @@ def retriever(vector_db , query , k = 3):
                 "chunk_id" : doc.metadata["chunk_id"],
                 "page" : doc.metadata["page"],
                 "score" : float(score),
+                "source": doc.metadata["source"],
                 "content" : doc.page_content
             }
         )

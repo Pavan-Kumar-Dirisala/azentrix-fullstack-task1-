@@ -9,13 +9,15 @@ def chunk_text(pages: list):
     for page in pages:
         page_number = page['page']
         text = page['text']
+        source = page["source"]
         page_chunks = chunker.split_text(text)
         for chunk in page_chunks:
             chunks.append(
                 {
                     'chunk_id' : chunk_index,
                     'page': page_number,
-                    'content' : chunk
+                    'content' : chunk,
+                    "source": source
                 }
             )
             chunk_index += 1

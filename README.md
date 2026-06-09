@@ -149,27 +149,38 @@ streamlit run app.py
 
 ## 📸 Interface Preview
 
-### Home Screen & Indexing Configuration
+### 1. Initial Dashboard State
 
-*Place Home Screen Screenshot Here*
+The application launches with an empty knowledge base, allowing users to upload PDF documents or provide custom text input before creating the retrieval index.
 
-### Document Ingestion & Vector Matrix Success
-
-*Place Upload Verification Screenshot Here*
-
-### Grounded Question Answering Engine
-
-*Place Interaction Screen Screenshot Here*
-
-### Verification & Citations Block
-
-*Place Source Page Citation Display Screenshot Here*
+![Initial Dashboard](images/initial_dashboard.jpg) 
 
 ---
 
-## 🎥 Demonstration
+### 2. Knowledge Base Construction & Document Summary
+
+After document ingestion, the system extracts content, generates embeddings, builds the FAISS vector index, and automatically produces a concise document summary for quick understanding.
+
+![Knowledge Base Ready](images/knowledge_base_construction.jpg)
 
 ---
+
+### 3. Semantic Retrieval & Question Answering
+
+Users can interact with the uploaded documents using natural language. The system performs semantic retrieval over the indexed knowledge base and generates context-grounded responses using GPT-5-mini.
+
+![Question Answering](images/document_summary.jpg)
+
+---
+
+### 4. Source Attribution & Explainability
+
+Every response is accompanied by document-level and page-level citations, enabling users to verify the origin of the generated information and maintain transparency.
+
+![Citations and Sources](images/qa_citations.jpg)
+
+---
+
 
 ## 🔮 Future Architecture Roadmap
 

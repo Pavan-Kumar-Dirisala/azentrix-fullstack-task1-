@@ -49,38 +49,8 @@ This project solves this challenge by implementing an isolated, secure **Context
 
 ## 🏗️ System Architecture
 
-```text
-       [ PDF Uploads ]           [ Pasted Text Input ]
-              │                            │
-              ▼                            ▼
-     [ PyMuPDF Parsing ]           [ Text String Ingestion ]
-              │                            │
-              └─────────────┬──────────────┘
-                            ▼
-                  [ Document Chunking ]
-                    (Recursive Text)
-                            │
-                            ▼
-              [ HuggingFace Embeddings Gen ]
-              (paraphrase-multilingual-mpnet)
-                            │
-                            ▼
-                 [ FAISS Vector Store ]
-                            │
-            ┌───────────────┴───────────────┐
-            ▼                               ▼
-     [ User Query Input ] ──► [ Similarity Retrieval (Top-K) ]
-                                            │
-                                            ▼
-                                  [ Grounded Context Block ]
-                                            │
-                                            ▼
-                                   [ GPT-5-mini Engine ]
-                                            │
-                                            ▼
-                              [ Grounded Response + Citations ]
+![image](images/architecture.jpg)
 
-```
 
 ---
 

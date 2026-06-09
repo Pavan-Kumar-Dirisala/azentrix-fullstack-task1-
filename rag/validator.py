@@ -1,4 +1,4 @@
-def is_relevant(retrieved_chunks, threshold=8.0):
+def is_relevant(retrieved_chunks, threshold=20.0):
 
     if not retrieved_chunks:
         return False

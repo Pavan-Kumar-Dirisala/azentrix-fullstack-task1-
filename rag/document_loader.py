@@ -1,13 +1,16 @@
 from rag.pdf_loader import extract_pages
 
 
-def load_documents(pdf_paths):
+def load_documents(pdf_files):
 
     all_pages = []
 
-    for pdf_path in pdf_paths:
+    for pdf in pdf_files:
 
-        pages = extract_pages(pdf_path)
+        pages = extract_pages(
+            pdf["path"],
+            pdf["name"]
+        )
 
         all_pages.extend(pages)
 

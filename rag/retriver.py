@@ -1,4 +1,4 @@
-def retriever(vector_db , query , k = 3):
+def retriever(vector_db , query , k = 5):
     results = vector_db.similarity_search_with_score(
         query = query,
         k = k

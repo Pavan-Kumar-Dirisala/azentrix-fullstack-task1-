@@ -1,4 +1,4 @@
-```markdown
+
 # 📄 Context-Aware Document Q&A Bot
 
 A high-performance Retrieval-Augmented Generation (RAG) based document intelligence system that enables users to upload complex PDF documents or paste unstructured text, facilitating natural language questioning grounded strictly within the provided content.
@@ -80,7 +80,7 @@ This project solves this challenge by implementing an isolated, secure **Context
                                             ▼
                               [ Grounded Response + Citations ]
 
-```
+
 
 ---
 

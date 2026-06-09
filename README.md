@@ -1,5 +1,5 @@
 
-# 📄 Context-Aware Document Q&A Bot
+# 📄 DocMind : A Context-Aware Document Q&A Bot
 
 A high-performance Retrieval-Augmented Generation (RAG) based document intelligence system that enables users to upload complex PDF documents or paste unstructured text, facilitating natural language questioning grounded strictly within the provided content.
 
@@ -62,7 +62,6 @@ azentrix-fullstack-task1/
 ├── app.py                      # Main Streamlit Dashboard Application UI Layout
 │
 ├── rag/                        # Modular RAG Architecture Core Directory
-│   ├── __init__.py             # Inits RAG tracking package namespace
 │   ├── chunker.py              # Text fragmentation and sliding window manager
 │   ├── document_loader.py      # Abstract interface parsing unified data assets
 │   ├── embeddings.py           # Local HuggingFace transformer encoder layer
@@ -179,24 +178,12 @@ Every response is accompanied by document-level and page-level citations, enabli
 
 ![Citations and Sources](images/qa_citations.jpg)
 
----
 
-
-## 🔮 Future Architecture Roadmap
-
-* **Long-Term Memory Layer:** Add persistent conversational chat storage loops (`ConversationBufferWindowMemory`).
-* **Hybrid Structural Search:** Combine dense vector similarity index queries with sparse BM25 keyword matching for enhanced retrieval accuracy.
-* **Scanned OCR Compatibility:** Integrate a `Tesseract` parsing pipeline layer to pull structural text from scanned, non-native digital PDF layouts.
-* **Dynamic Highlight Mapping:** Visual document view coordinates synchronization to highlight exactly where source text lives inside the original PDF.
-
----
 
 ## 👨‍💻 Author
 
-**Pavan Kumar Dirisala** *B.Tech in Computer Science & Engineering — KL University* 🚀 **Aspiring Generative AI & Machine Learning Engineer** - **GitHub:** [@your-username](https://www.google.com/search?q=https://github.com/your-username)
+**Pavan Kumar Dirisala** *B.Tech in Computer Science & Engineering — KL University* 🚀 **Aspiring Generative AI & Machine Learning Engineer** - **GitHub:** [@Pavan-Kumar-Dirisala](https://github.com/Pavan-Kumar-Dirisala)
 
 * **LinkedIn:** [Pavan Kumar Dirisala](https://linkedin.com/in/your-profile)
-
-```
 
 ```

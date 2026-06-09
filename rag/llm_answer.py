@@ -35,7 +35,7 @@ Question:
     for chunk in retrieved_chunks:
 
         citations.append(
-            f"{chunk['source']} - Page {chunk['page']}"
+            f"Source {chunk['source']} | Page {chunk['page']}"
         )
 
     citations = "\n".join(

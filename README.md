@@ -80,12 +80,13 @@ This project solves this challenge by implementing an isolated, secure **Context
                                             ▼
                               [ Grounded Response + Citations ]
 
-
+```
 
 ---
 
 ## 📂 Project Structure
 
+```text
 azentrix-fullstack-task1/
 │
 ├── app.py                      # Main Streamlit Dashboard Application UI Layout
@@ -108,6 +109,7 @@ azentrix-fullstack-task1/
 ├── .env                        # Local execution secrets vault
 └── README.md                   # System documentation documentation
 
+```
 
 ---
 
